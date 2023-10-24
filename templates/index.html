@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="chatbot-container">
+        <button id="chatbot-toggle" class="chatbot-toggle-button">Chat</button>
+        <div id="chatbot" class="chatbot">
+            <div id="chatbot-header" class="chatbot-header">
+                Chatbot
+                <button id="chatbot-close" class="chatbot-close-button">×</button>
+            </div>
+            <div id="chatbot-body" class="chatbot-body">
+            </div>
+            <div id="chatbot-input" class="chatbot-input">
+                <textarea id="user-input" rows="1" placeholder="Type your message..."></textarea>
+                <button id="send-button" class="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='chat.js')}}"></script>
+</body>
+
+</html>
