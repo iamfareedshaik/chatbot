@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import openai
 
 app = Flask(__name__)
+openai.api_key = ''
 chat_messages = []
 
 @app.route('/')
